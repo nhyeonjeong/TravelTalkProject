@@ -13,6 +13,19 @@
 		8BD1CFE22B544F5E00923F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFE02B544F5E00923F88 /* Main.storyboard */; };
 		8BD1CFE42B544F5F00923F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFE32B544F5F00923F88 /* Assets.xcassets */; };
 		8BD1CFE72B544F5F00923F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFE52B544F5F00923F88 /* LaunchScreen.storyboard */; };
+		8BD1CFF12B54501400923F88 /* TravelTalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFF02B54501400923F88 /* TravelTalk.storyboard */; };
+		8BD1CFF32B54507200923F88 /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFF22B54507200923F88 /* TravelTalkViewController.swift */; };
+		8BD1CFF62B54546D00923F88 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFF52B54546D00923F88 /* ChattingData.swift */; };
+		8BD1CFF92B5454FA00923F88 /* TravelTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFF72B5454FA00923F88 /* TravelTalkTableViewCell.swift */; };
+		8BD1CFFA2B5454FA00923F88 /* TravelTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFF82B5454FA00923F88 /* TravelTalkTableViewCell.xib */; };
+		8BD1CFFD2B545A5500923F88 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFFC2B545A5500923F88 /* UILabel+Extension.swift */; };
+		8BD1D0002B5468F700923F88 /* TravelTeamTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFFE2B5468F700923F88 /* TravelTeamTalkTableViewCell.swift */; };
+		8BD1D0012B5468F700923F88 /* TravelTeamTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CFFF2B5468F700923F88 /* TravelTeamTalkTableViewCell.xib */; };
+		8BD1D0032B546E7100923F88 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D0022B546E7100923F88 /* ChatRoomViewController.swift */; };
+		8BD1D0062B54701600923F88 /* BubbleOpponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D0042B54701600923F88 /* BubbleOpponentTableViewCell.swift */; };
+		8BD1D0072B54701600923F88 /* BubbleOpponentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1D0052B54701600923F88 /* BubbleOpponentTableViewCell.xib */; };
+		8BD1D00A2B54702500923F88 /* BubbleMyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D0082B54702500923F88 /* BubbleMyTableViewCell.swift */; };
+		8BD1D00B2B54702500923F88 /* BubbleMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1D0092B54702500923F88 /* BubbleMyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		8BD1CFE32B544F5F00923F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD1CFE62B544F5F00923F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BD1CFE82B544F5F00923F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD1CFF02B54501400923F88 /* TravelTalk.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelTalk.storyboard; sourceTree = "<group>"; };
+		8BD1CFF22B54507200923F88 /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
+		8BD1CFF52B54546D00923F88 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		8BD1CFF72B5454FA00923F88 /* TravelTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkTableViewCell.swift; sourceTree = "<group>"; };
+		8BD1CFF82B5454FA00923F88 /* TravelTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkTableViewCell.xib; sourceTree = "<group>"; };
+		8BD1CFFC2B545A5500923F88 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		8BD1CFFE2B5468F700923F88 /* TravelTeamTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTeamTalkTableViewCell.swift; sourceTree = "<group>"; };
+		8BD1CFFF2B5468F700923F88 /* TravelTeamTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTeamTalkTableViewCell.xib; sourceTree = "<group>"; };
+		8BD1D0022B546E7100923F88 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		8BD1D0042B54701600923F88 /* BubbleOpponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleOpponentTableViewCell.swift; sourceTree = "<group>"; };
+		8BD1D0052B54701600923F88 /* BubbleOpponentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleOpponentTableViewCell.xib; sourceTree = "<group>"; };
+		8BD1D0082B54702500923F88 /* BubbleMyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMyTableViewCell.swift; sourceTree = "<group>"; };
+		8BD1D0092B54702500923F88 /* BubbleMyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleMyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,10 @@
 		8BD1CFD92B544F5E00923F88 /* TravelTalkProject */ = {
 			isa = PBXGroup;
 			children = (
+				8BD1CFFB2B545A4200923F88 /* Extension */,
+				8BD1CFF42B54545F00923F88 /* Model */,
+				8BD1CFEF2B544FFF00923F88 /* TravelTalk */,
+				8BD1CFEE2B544FB900923F88 /* TableViewCell */,
 				8BD1CFDA2B544F5E00923F88 /* AppDelegate.swift */,
 				8BD1CFDC2B544F5E00923F88 /* SceneDelegate.swift */,
 				8BD1CFDE2B544F5E00923F88 /* ViewController.swift */,
@@ -65,6 +95,63 @@
 				8BD1CFE82B544F5F00923F88 /* Info.plist */,
 			);
 			path = TravelTalkProject;
+			sourceTree = "<group>";
+		};
+		8BD1CFEE2B544FB900923F88 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1D00D2B54706600923F88 /* ChatRoom */,
+				8BD1D00C2B54703900923F88 /* Main */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8BD1CFEF2B544FFF00923F88 /* TravelTalk */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1CFF02B54501400923F88 /* TravelTalk.storyboard */,
+				8BD1CFF22B54507200923F88 /* TravelTalkViewController.swift */,
+				8BD1D0022B546E7100923F88 /* ChatRoomViewController.swift */,
+			);
+			path = TravelTalk;
+			sourceTree = "<group>";
+		};
+		8BD1CFF42B54545F00923F88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1CFF52B54546D00923F88 /* ChattingData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BD1CFFB2B545A4200923F88 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1CFFC2B545A5500923F88 /* UILabel+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8BD1D00C2B54703900923F88 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1CFF72B5454FA00923F88 /* TravelTalkTableViewCell.swift */,
+				8BD1CFF82B5454FA00923F88 /* TravelTalkTableViewCell.xib */,
+				8BD1CFFE2B5468F700923F88 /* TravelTeamTalkTableViewCell.swift */,
+				8BD1CFFF2B5468F700923F88 /* TravelTeamTalkTableViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8BD1D00D2B54706600923F88 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1D0042B54701600923F88 /* BubbleOpponentTableViewCell.swift */,
+				8BD1D0052B54701600923F88 /* BubbleOpponentTableViewCell.xib */,
+				8BD1D0082B54702500923F88 /* BubbleMyTableViewCell.swift */,
+				8BD1D0092B54702500923F88 /* BubbleMyTableViewCell.xib */,
+			);
+			path = ChatRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +212,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1D0072B54701600923F88 /* BubbleOpponentTableViewCell.xib in Resources */,
+				8BD1D0012B5468F700923F88 /* TravelTeamTalkTableViewCell.xib in Resources */,
 				8BD1CFE72B544F5F00923F88 /* LaunchScreen.storyboard in Resources */,
 				8BD1CFE42B544F5F00923F88 /* Assets.xcassets in Resources */,
+				8BD1CFF12B54501400923F88 /* TravelTalk.storyboard in Resources */,
 				8BD1CFE22B544F5E00923F88 /* Main.storyboard in Resources */,
+				8BD1CFFA2B5454FA00923F88 /* TravelTalkTableViewCell.xib in Resources */,
+				8BD1D00B2B54702500923F88 /* BubbleMyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1D0002B5468F700923F88 /* TravelTeamTalkTableViewCell.swift in Sources */,
 				8BD1CFDF2B544F5E00923F88 /* ViewController.swift in Sources */,
+				8BD1D0062B54701600923F88 /* BubbleOpponentTableViewCell.swift in Sources */,
 				8BD1CFDB2B544F5E00923F88 /* AppDelegate.swift in Sources */,
+				8BD1CFF32B54507200923F88 /* TravelTalkViewController.swift in Sources */,
+				8BD1CFFD2B545A5500923F88 /* UILabel+Extension.swift in Sources */,
+				8BD1D00A2B54702500923F88 /* BubbleMyTableViewCell.swift in Sources */,
+				8BD1CFF62B54546D00923F88 /* ChattingData.swift in Sources */,
 				8BD1CFDD2B544F5E00923F88 /* SceneDelegate.swift in Sources */,
+				8BD1CFF92B5454FA00923F88 /* TravelTalkTableViewCell.swift in Sources */,
+				8BD1D0032B546E7100923F88 /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +396,7 @@
 				INFOPLIST_FILE = TravelTalkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TravelTalk;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,9 +406,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ohddang.TravelTalkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +426,7 @@
 				INFOPLIST_FILE = TravelTalkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TravelTalk;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,9 +436,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ohddang.TravelTalkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
