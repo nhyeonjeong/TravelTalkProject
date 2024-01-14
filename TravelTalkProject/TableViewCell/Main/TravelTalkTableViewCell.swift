@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol TableViewCellSetting {
+protocol MainTableViewCellSetting {
     static var identifier: String { get }
-    func configureCell()
+    func configureCell(data: ChatRoom)
     
 }
-class TravelTalkTableViewCell: UITableViewCell {
+class TravelTalkTableViewCell: UITableViewCell, MainTableViewCellSetting {
 
     static let identifier = "TravelTalkTableViewCell"
     
@@ -23,7 +23,7 @@ class TravelTalkTableViewCell: UITableViewCell {
     
     @IBOutlet weak var recentDateLabel: UILabel!
     let format = DateFormatter()
-    let format2 = DateFormatter()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         designCell()
@@ -59,8 +59,8 @@ class TravelTalkTableViewCell: UITableViewCell {
         }
         let backToDate: Date = format.date(from: lastTalk.date) ?? Date()
         
-        format2.dateFormat = "yy.MM.dd"
-        let result = format2.string(from: backToDate)
+        format.dateFormat = "yy.MM.dd"
+        let result = format.string(from: backToDate)
         
         return result
     }

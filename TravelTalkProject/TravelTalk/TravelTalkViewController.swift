@@ -56,9 +56,14 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
+    // 눌렀을 때 넘어가기
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ChatRoomViewController") as! ChatRoomViewController
-        vc.modalPresentationStyle = .fullScreen
+        
+        let chatRoom = mockChatList[indexPath.row]
+        vc.navigationTitle = chatRoom.chatroomName
+        vc.chatList = chatRoom.chatList
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     
