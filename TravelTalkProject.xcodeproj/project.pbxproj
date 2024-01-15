@@ -12,6 +12,9 @@
 		8B457E6A2B551E1D00C3154F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B457E692B551E1D00C3154F /* UIViewController+Extension.swift */; };
 		8B457E6C2B551FFC00C3154F /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B457E6B2B551FFC00C3154F /* Enumeration.swift */; };
 		8B457E6E2B55426E00C3154F /* DateFormat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B457E6D2B55426E00C3154F /* DateFormat+Extension.swift */; };
+		8B457E742B55697500C3154F /* TheaterMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B457E732B55697500C3154F /* TheaterMap.storyboard */; };
+		8B457E762B55699D00C3154F /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B457E752B55699D00C3154F /* TheaterViewController.swift */; };
+		8B457E792B5569BC00C3154F /* TheaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B457E782B5569BC00C3154F /* TheaterData.swift */; };
 		8BD1CFDB2B544F5E00923F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFDA2B544F5E00923F88 /* AppDelegate.swift */; };
 		8BD1CFDD2B544F5E00923F88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFDC2B544F5E00923F88 /* SceneDelegate.swift */; };
 		8BD1CFDF2B544F5E00923F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1CFDE2B544F5E00923F88 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 		8B457E692B551E1D00C3154F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		8B457E6B2B551FFC00C3154F /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		8B457E6D2B55426E00C3154F /* DateFormat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormat+Extension.swift"; sourceTree = "<group>"; };
+		8B457E732B55697500C3154F /* TheaterMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheaterMap.storyboard; sourceTree = "<group>"; };
+		8B457E752B55699D00C3154F /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
+		8B457E782B5569BC00C3154F /* TheaterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterData.swift; sourceTree = "<group>"; };
 		8BD1CFD72B544F5E00923F88 /* TravelTalkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTalkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD1CFDA2B544F5E00923F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD1CFDC2B544F5E00923F88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B457E722B55695D00C3154F /* TheaterMap */ = {
+			isa = PBXGroup;
+			children = (
+				8B457E772B5569B100C3154F /* Model */,
+				8B457E732B55697500C3154F /* TheaterMap.storyboard */,
+				8B457E752B55699D00C3154F /* TheaterViewController.swift */,
+			);
+			path = TheaterMap;
+			sourceTree = "<group>";
+		};
+		8B457E772B5569B100C3154F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B457E782B5569BC00C3154F /* TheaterData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8BD1CFCE2B544F5E00923F88 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +116,7 @@
 		8BD1CFD92B544F5E00923F88 /* TravelTalkProject */ = {
 			isa = PBXGroup;
 			children = (
+				8B457E722B55695D00C3154F /* TheaterMap */,
 				8BD1CFFB2B545A4200923F88 /* Extension */,
 				8BD1CFF42B54545F00923F88 /* Model */,
 				8BD1CFEF2B544FFF00923F88 /* TravelTalk */,
@@ -230,6 +255,7 @@
 				8BD1D0072B54701600923F88 /* BubbleOpponentTableViewCell.xib in Resources */,
 				8BD1D0012B5468F700923F88 /* TravelTeamTalkTableViewCell.xib in Resources */,
 				8BD1CFE72B544F5F00923F88 /* LaunchScreen.storyboard in Resources */,
+				8B457E742B55697500C3154F /* TheaterMap.storyboard in Resources */,
 				8BD1CFE42B544F5F00923F88 /* Assets.xcassets in Resources */,
 				8BD1CFF12B54501400923F88 /* TravelTalk.storyboard in Resources */,
 				8BD1CFE22B544F5E00923F88 /* Main.storyboard in Resources */,
@@ -254,10 +280,12 @@
 				8BD1CFDB2B544F5E00923F88 /* AppDelegate.swift in Sources */,
 				8BD1CFF32B54507200923F88 /* TravelTalkViewController.swift in Sources */,
 				8BD1CFFD2B545A5500923F88 /* UILabel+Extension.swift in Sources */,
+				8B457E792B5569BC00C3154F /* TheaterData.swift in Sources */,
 				8BD1D00A2B54702500923F88 /* BubbleMyTableViewCell.swift in Sources */,
 				8BD1CFF62B54546D00923F88 /* ChattingData.swift in Sources */,
 				8BD1CFDD2B544F5E00923F88 /* SceneDelegate.swift in Sources */,
 				8B457E6C2B551FFC00C3154F /* Enumeration.swift in Sources */,
+				8B457E762B55699D00C3154F /* TheaterViewController.swift in Sources */,
 				8BD1CFF92B5454FA00923F88 /* TravelTalkTableViewCell.swift in Sources */,
 				8BD1D0032B546E7100923F88 /* ChatRoomViewController.swift in Sources */,
 				8B457E662B551DB300C3154F /* Protocol.swift in Sources */,
@@ -416,7 +444,7 @@
 				INFOPLIST_FILE = TravelTalkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TravelTalk;
+				INFOPLIST_KEY_UIMainStoryboardFile = TheaterMap;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,7 +474,7 @@
 				INFOPLIST_FILE = TravelTalkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TravelTalk;
+				INFOPLIST_KEY_UIMainStoryboardFile = TheaterMap;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
