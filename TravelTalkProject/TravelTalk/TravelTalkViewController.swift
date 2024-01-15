@@ -35,6 +35,9 @@ extension TravelTalkViewController: ViewSetting {
         // TravelTalkTableViewCell의 xib
         let xib = UINib(nibName: TravelTalkTableViewCell.identifier, bundle: nil)
         talkListTableView.register(xib, forCellReuseIdentifier: TravelTalkTableViewCell.identifier)
+        
+        let teamXib = UINib(nibName: TravelTeamTalkTableViewCell.identifier, bundle: nil)
+        talkListTableView.register(teamXib, forCellReuseIdentifier: TravelTeamTalkTableViewCell.identifier)
     }
 }
 
@@ -44,13 +47,22 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = talkListTableView.dequeueReusableCell(withIdentifier: TravelTalkTableViewCell.identifier, for: indexPath) as! TravelTalkTableViewCell
-        // 세팅
         
-        cell.configureCell(data: mockChatList[indexPath.row])
-//        cell.backgroundColor = .green
-        
-        return cell
+        if mockChatList[indexPath.row].chatroomId == 1 {
+            
+            let cell = talkListTableView.dequeueReusableCell(withIdentifier: TravelTeamTalkTableViewCell.identifier, for: indexPath) as! TravelTeamTalkTableViewCell
+
+            cell.configureCell(data: mockChatList[indexPath.row])
+            return cell
+            
+        } else {
+            
+            let cell = talkListTableView.dequeueReusableCell(withIdentifier: TravelTalkTableViewCell.identifier, for: indexPath) as! TravelTalkTableViewCell
+            
+            cell.configureCell(data: mockChatList[indexPath.row])
+            
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
