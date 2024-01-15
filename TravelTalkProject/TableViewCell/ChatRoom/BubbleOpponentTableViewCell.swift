@@ -34,13 +34,27 @@ class BubbleOpponentTableViewCell: UITableViewCell {
     func designCell() {
         opponentImageView.layer.cornerRadius = opponentImageView.frame.width / 2
         
+        opponentChatView.backgroundColor = BubbleColor.opponentBackColor
+
+        opponentNameLabel.font = FontStyle.chatRoomNickname
+        opponentNameLabel.textColor = TextColor.chatRoomNickname
+
+        opponentChatLabel.font = FontStyle.chatRoomMessage
+        opponentChatLabel.numberOfLines = 0
+        opponentChatLabel.textColor = TextColor.chatRoomMessage
+
+        dateLabel.font = FontStyle.date
+        dateLabel.textColor = TextColor.date
+        dateLabel.textAlignment = .left
+        /*
         opponentNameLabel.boldStyleLable(fontSize: 15, numberOfLines: 1)
         opponentChatLabel.boldStyleLable(fontSize: 15, numberOfLines: 0)
-        opponentChatView.layer.borderColor = UIColor.gray.cgColor
+        dateLabel.boldStyleLable(textColor: .gray, fontSize: 13, numberOfLines: 1)
+         */
+        opponentChatView.layer.borderColor = BubbleColor.borderColor
         opponentChatView.layer.borderWidth = 1
         opponentChatView.layer.cornerRadius = 10
-        
-        dateLabel.boldStyleLable(textColor: .gray, fontSize: 13, numberOfLines: 1)
+         
     }
     
     func getDate(dateString: String) -> String{

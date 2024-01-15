@@ -64,10 +64,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="opponentNicknameLabel" destination="Gvo-BZ-K4P" id="s7A-Wi-ZrK"/>
                 <outlet property="recentDateLabel" destination="chg-RJ-G04" id="GcS-eE-qdh"/>
                 <outlet property="recentTalkLabel" destination="G1H-KR-a0t" id="D2X-Sc-HV6"/>
                 <outlet property="userImageView" destination="6Ln-IE-5Db" id="V8H-Da-MS6"/>
-                <outlet property="userNameLabel" destination="Gvo-BZ-K4P" id="s7A-Wi-ZrK"/>
             </connections>
             <point key="canvasLocation" x="138.93129770992365" y="34.859154929577464"/>
         </tableViewCell>

@@ -8,10 +8,12 @@
 import UIKit
 
 extension UILabel {
-    func boldStyleLable(textColor: UIColor = .label, alignment: NSTextAlignment = .left, fontSize: CGFloat = 17, numberOfLines nol: Int = 1) {
+    func boldStyleLable(textColor: UIColor = .label, alignment: NSTextAlignment = .left, fontSize: CGFloat = 17, numberOfLines nol: Int = 1) -> UILabel {
         self.textColor = textColor
         self.textAlignment = alignment
         self.font = .boldSystemFont(ofSize: fontSize)
         self.numberOfLines = nol
+        
+        return self
     }
 }

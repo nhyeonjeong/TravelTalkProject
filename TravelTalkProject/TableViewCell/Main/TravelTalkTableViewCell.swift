@@ -12,7 +12,7 @@ class TravelTalkTableViewCell: UITableViewCell {
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var recentTalkLabel: UILabel!
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var opponentNicknameLabel: UILabel!
     
     @IBOutlet weak var recentDateLabel: UILabel!
     let format = DateFormatter()
@@ -24,7 +24,7 @@ class TravelTalkTableViewCell: UITableViewCell {
     /// 데이터 가져와서 띄우기
     func configureCell(data: ChatRoom) {
         userImageView.image = UIImage(named: data.chatroomImage[0])
-        userNameLabel.text = data.chatroomName
+        opponentNicknameLabel.text = data.chatroomName
         recentTalkLabel.text = data.chatList.last?.message // 마지막 요소가 있을 때 가져오기
         
         recentDateLabel.text = getDate(chatList: data.chatList)
@@ -37,9 +37,24 @@ class TravelTalkTableViewCell: UITableViewCell {
         userImageView.contentMode = .scaleAspectFill
         userImageView.layer.cornerRadius = userImageView.frame.width / 2
         // Label
-        userNameLabel.boldStyleLable(fontSize: 15)
+        
+        opponentNicknameLabel = LabelStyle.chatRoomNickname.labelSetting(opponentNicknameLabel)
+  
+        opponentNicknameLabel.font = FontStyle.nickname
+        opponentNicknameLabel.textColor = TextColor.nickname
+        
+        recentTalkLabel.font = FontStyle.recentMessage
+        recentTalkLabel.textColor = TextColor.recentMessage
+        
+        recentDateLabel.font = FontStyle.date
+        recentDateLabel.textColor = TextColor.date
+        recentDateLabel.textAlignment = .right
+
+        /*
+        opponentNicknameLabel.boldStyleLable(fontSize: 15)
         recentTalkLabel.boldStyleLable(textColor: .gray, fontSize: 14, numberOfLines: 1)
         recentDateLabel.boldStyleLable(textColor: .systemGray2, alignment: .right, fontSize: 14, numberOfLines: 1)
+         */
         
     }
     /// 표기할 날짜

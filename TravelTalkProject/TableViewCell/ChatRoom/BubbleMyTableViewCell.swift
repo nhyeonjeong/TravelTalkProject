@@ -20,14 +20,24 @@ class BubbleMyTableViewCell: UITableViewCell {
         
     }
     func designCell() {
+        
+        myChatLabel.font = FontStyle.chatRoomMessage
+        myChatLabel.textColor = TextColor.chatRoomMessage
+        myChatLabel.numberOfLines = 0
+        
+        dateLabel.font = FontStyle.date
+        dateLabel.textColor = TextColor.date
+        dateLabel.textAlignment = .right
+        
+        /*
         myChatLabel.boldStyleLable(fontSize: 15, numberOfLines: 0)
+        dateLabel.boldStyleLable(textColor: .gray, alignment: .right, fontSize: 13, numberOfLines: 1)
+        */
         myChatView.layer.cornerRadius = 10
         myChatView.layer.borderWidth = 1
-        myChatView.layer.borderColor = UIColor.gray.cgColor
-        myChatView.backgroundColor = .systemGray5
+        myChatView.layer.borderColor = BubbleColor.borderColor
+        myChatView.backgroundColor = BubbleColor.userBackColor
 //        myChatLabel.clipsToBounds = true
-        
-        dateLabel.boldStyleLable(textColor: .gray, alignment: .right, fontSize: 13, numberOfLines: 1)
     }
 
     func configureCell(data: Chat) {
