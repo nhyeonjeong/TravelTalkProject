@@ -7,8 +7,7 @@
 
 import UIKit
 
-class BubbleMyTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
-    static let identifier: String = "BubbleMyTableViewCell"
+class BubbleMyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var myChatView: UIView!
     @IBOutlet weak var myChatLabel: UILabel!

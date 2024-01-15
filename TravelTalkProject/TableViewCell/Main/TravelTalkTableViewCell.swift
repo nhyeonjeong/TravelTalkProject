@@ -7,14 +7,7 @@
 
 import UIKit
 
-protocol MainTableViewCellSetting {
-    static var identifier: String { get }
-    func configureCell(data: ChatRoom)
-    
-}
-class TravelTalkTableViewCell: UITableViewCell, MainTableViewCellSetting {
-
-    static let identifier = "TravelTalkTableViewCell"
+class TravelTalkTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userImageView: UIImageView!
     

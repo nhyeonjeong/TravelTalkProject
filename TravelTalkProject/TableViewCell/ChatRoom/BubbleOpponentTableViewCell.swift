@@ -7,14 +7,7 @@
 
 import UIKit
 
-protocol BubbleTableViewCellSetting {
-    static var identifier: String { get }
-    func configureCell(data: Chat)
-    
-}
-class BubbleOpponentTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
-    
-    static let identifier = "BubbleOpponentTableViewCell"
+class BubbleOpponentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var opponentChatView: UIView!
     @IBOutlet weak var opponentImageView: UIImageView!
