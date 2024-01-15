@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController: ReuseableProtocol {
+    
     static var identifier: String {
         return String(describing: self)
     }

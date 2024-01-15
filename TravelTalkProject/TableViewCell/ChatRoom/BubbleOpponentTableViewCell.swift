@@ -15,8 +15,6 @@ class BubbleOpponentTableViewCell: UITableViewCell {
     @IBOutlet weak var opponentChatLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    let format = DateFormatter()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -28,7 +26,7 @@ class BubbleOpponentTableViewCell: UITableViewCell {
         opponentNameLabel.text = data.user.rawValue
         opponentChatLabel.text = data.message
         
-        dateLabel.text = getDate(dateString: data.date)
+        dateLabel.text = DateFormatter.format.getDate(dateString: data.date, newDateFormat: "hh:mm a")
     }
     
     func designCell() {
@@ -56,7 +54,7 @@ class BubbleOpponentTableViewCell: UITableViewCell {
         opponentChatView.layer.cornerRadius = 10
          
     }
-    
+    /*
     func getDate(dateString: String) -> String{
         format.dateFormat = "yyyy-MM-dd HH:mm"
 
@@ -67,5 +65,5 @@ class BubbleOpponentTableViewCell: UITableViewCell {
         
         return result
     }
-    
+     */
 }

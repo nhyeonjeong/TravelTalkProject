@@ -42,9 +42,10 @@ class BubbleMyTableViewCell: UITableViewCell {
 
     func configureCell(data: Chat) {
         myChatLabel.text = data.message
-        dateLabel.text = getDate(dateString: data.date)
+        dateLabel.text = DateFormatter.format.getDate(dateString: data.date, newDateFormat: "hh:mm a")
     }
     
+    /*
     func getDate(dateString: String) -> String{
         format.dateFormat = "yyyy-MM-dd hh:mm"
 
@@ -55,5 +56,5 @@ class BubbleMyTableViewCell: UITableViewCell {
         
         return result
     }
-    
+    */
 }

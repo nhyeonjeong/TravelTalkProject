@@ -27,7 +27,10 @@ class TravelTalkTableViewCell: UITableViewCell {
         opponentNicknameLabel.text = data.chatroomName
         recentTalkLabel.text = data.chatList.last?.message // 마지막 요소가 있을 때 가져오기
         
-        recentDateLabel.text = getDate(chatList: data.chatList)
+        guard let lastChat = data.chatList.last else {
+            return
+        }
+        recentDateLabel.text = DateFormatter.format.getDate(dateString: lastChat.date, newDateFormat: "yy.MM.dd")
   
     }
     
@@ -57,6 +60,7 @@ class TravelTalkTableViewCell: UITableViewCell {
          */
         
     }
+    /*
     /// 표기할 날짜
     func getDate(chatList: [Chat]) -> String {
         format.dateFormat = "yyyy-MM-dd hh:mm"
@@ -72,6 +76,6 @@ class TravelTalkTableViewCell: UITableViewCell {
         
         return result
     }
-    
+    */
 }
 
