@@ -58,7 +58,7 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
     }
     // 눌렀을 때 넘어가기
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ChatRoomViewController") as! ChatRoomViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: ChatRoomViewController.identifier) as! ChatRoomViewController
         
         let chatRoom = mockChatList[indexPath.row]
         vc.navigationTitle = chatRoom.chatroomName

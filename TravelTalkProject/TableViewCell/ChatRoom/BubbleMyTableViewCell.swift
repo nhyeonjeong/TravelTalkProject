@@ -7,8 +7,7 @@
 
 import UIKit
 
-class BubbleMyTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
-    static let identifier: String = "BubbleMyTableViewCell"
+class BubbleMyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var myChatView: UIView!
     @IBOutlet weak var myChatLabel: UILabel!
@@ -21,21 +20,32 @@ class BubbleMyTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
         
     }
     func designCell() {
+        
+        myChatLabel.font = FontStyle.chatRoomMessage
+        myChatLabel.textColor = TextColor.chatRoomMessage
+        myChatLabel.numberOfLines = 0
+        
+        dateLabel.font = FontStyle.date
+        dateLabel.textColor = TextColor.date
+        dateLabel.textAlignment = .right
+        
+        /*
         myChatLabel.boldStyleLable(fontSize: 15, numberOfLines: 0)
+        dateLabel.boldStyleLable(textColor: .gray, alignment: .right, fontSize: 13, numberOfLines: 1)
+        */
         myChatView.layer.cornerRadius = 10
         myChatView.layer.borderWidth = 1
-        myChatView.layer.borderColor = UIColor.gray.cgColor
-        myChatView.backgroundColor = .systemGray5
+        myChatView.layer.borderColor = BubbleColor.borderColor
+        myChatView.backgroundColor = BubbleColor.userBackColor
 //        myChatLabel.clipsToBounds = true
-        
-        dateLabel.boldStyleLable(textColor: .gray, alignment: .right, fontSize: 13, numberOfLines: 1)
     }
 
     func configureCell(data: Chat) {
         myChatLabel.text = data.message
-        dateLabel.text = getDate(dateString: data.date)
+        dateLabel.text = DateFormatter.format.getDate(dateString: data.date, newDateFormat: "hh:mm a")
     }
     
+    /*
     func getDate(dateString: String) -> String{
         format.dateFormat = "yyyy-MM-dd hh:mm"
 
@@ -46,5 +56,5 @@ class BubbleMyTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
         
         return result
     }
-    
+    */
 }

@@ -7,22 +7,13 @@
 
 import UIKit
 
-protocol BubbleTableViewCellSetting {
-    static var identifier: String { get }
-    func configureCell(data: Chat)
-    
-}
-class BubbleOpponentTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
-    
-    static let identifier = "BubbleOpponentTableViewCell"
+class BubbleOpponentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var opponentChatView: UIView!
     @IBOutlet weak var opponentImageView: UIImageView!
     @IBOutlet weak var opponentNameLabel: UILabel!
     @IBOutlet weak var opponentChatLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
-    let format = DateFormatter()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,21 +26,35 @@ class BubbleOpponentTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
         opponentNameLabel.text = data.user.rawValue
         opponentChatLabel.text = data.message
         
-        dateLabel.text = getDate(dateString: data.date)
+        dateLabel.text = DateFormatter.format.getDate(dateString: data.date, newDateFormat: "hh:mm a")
     }
     
     func designCell() {
         opponentImageView.layer.cornerRadius = opponentImageView.frame.width / 2
         
+        opponentChatView.backgroundColor = BubbleColor.opponentBackColor
+
+        opponentNameLabel.font = FontStyle.chatRoomNickname
+        opponentNameLabel.textColor = TextColor.chatRoomNickname
+
+        opponentChatLabel.font = FontStyle.chatRoomMessage
+        opponentChatLabel.numberOfLines = 0
+        opponentChatLabel.textColor = TextColor.chatRoomMessage
+
+        dateLabel.font = FontStyle.date
+        dateLabel.textColor = TextColor.date
+        dateLabel.textAlignment = .left
+        /*
         opponentNameLabel.boldStyleLable(fontSize: 15, numberOfLines: 1)
         opponentChatLabel.boldStyleLable(fontSize: 15, numberOfLines: 0)
-        opponentChatView.layer.borderColor = UIColor.gray.cgColor
+        dateLabel.boldStyleLable(textColor: .gray, fontSize: 13, numberOfLines: 1)
+         */
+        opponentChatView.layer.borderColor = BubbleColor.borderColor
         opponentChatView.layer.borderWidth = 1
         opponentChatView.layer.cornerRadius = 10
-        
-        dateLabel.boldStyleLable(textColor: .gray, fontSize: 13, numberOfLines: 1)
+         
     }
-    
+    /*
     func getDate(dateString: String) -> String{
         format.dateFormat = "yyyy-MM-dd HH:mm"
 
@@ -60,5 +65,5 @@ class BubbleOpponentTableViewCell: UITableViewCell, BubbleTableViewCellSetting {
         
         return result
     }
-    
+     */
 }
