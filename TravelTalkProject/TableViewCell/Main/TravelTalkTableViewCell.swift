@@ -40,9 +40,9 @@ class TravelTalkTableViewCell: UITableViewCell {
         userImageView.contentMode = .scaleAspectFill
         userImageView.layer.cornerRadius = userImageView.frame.width / 2
         // Label
-        
+        /*
         opponentNicknameLabel = LabelStyle.chatRoomNickname.labelSetting(opponentNicknameLabel)
-  
+  */
         opponentNicknameLabel.font = FontStyle.nickname
         opponentNicknameLabel.textColor = TextColor.nickname
         
