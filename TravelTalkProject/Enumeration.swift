@@ -18,15 +18,15 @@ enum LabelStyle {
     func labelSetting(_ label: UILabel) -> UILabel {
         switch self {
         case .nickname:
-            return label.boldStyleLable(fontSize: 15, numberOfLines: 1)
+            return label.boldStyleLabel(fontSize: 15, numberOfLines: 1)
         case .recentMessage:
-            return label.boldStyleLable(textColor: .gray, fontSize: 14, numberOfLines: 1)
+            return label.boldStyleLabel(textColor: .gray, fontSize: 14, numberOfLines: 1)
         case .chatRoomMessage:
-            return label.boldStyleLable(fontSize: 14, numberOfLines: 0)
+            return label.boldStyleLabel(fontSize: 14, numberOfLines: 0)
         case .chatRoomNickname:
-            return label.boldStyleLable(fontSize: 14)
+            return label.boldStyleLabel(fontSize: 14)
         case .date:
-            return label.boldStyleLable(textColor: .gray, fontSize: 13, numberOfLines: 1)
+            return label.boldStyleLabel(textColor: .gray, fontSize: 13, numberOfLines: 1)
         }
     }
 }
